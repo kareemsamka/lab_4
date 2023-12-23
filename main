@@ -1,0 +1,23 @@
+#include <iostream>
+
+int addTwoNumbers(int a, int b) {
+    int sum = a + b;
+    return sum;
+}
+
+int main() {
+    int num1, num2;
+
+    // استخدام std::cout لطلب إدخال الأرقام من المستخدم
+    std::cout << "أدخل الرقم الأول: ";
+    std::cin >> num1;
+
+    std::cout << "أدخل الرقم الثاني: ";
+    std::cin >> num2;
+
+    // استدعاء الدالة وطباعة الناتج
+    int result = addTwoNumbers(num1, num2);
+    std::cout << "المجموع هو: " << result << std::endl;
+
+    return 0;
+}
